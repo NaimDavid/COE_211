@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class EntryPoint{
+     
+	public static void main(String[] args){
+		
+	int x = 0; 
+	int y = (int)(Math.random()*10+1);
+	while (x<y){
+           Scanner sc = new Scanner(System.in);
+
+	System.out.print("Please input the employee's first name: ");
+		String first_name = sc.nextLine();
+     
+	System.out.print("Please input the employee's last name: ");
+		String last_name = sc.nextLine();
+     
+	System.out.print("Please input the employee's age: ");
+		int age = sc.nextInt();
+     
+	System.out.print("Please input the employee's salary: ");
+		double salary = sc.nextDouble();
+     
+	System.out.println("Employee Information: " + first_name + last_name + "," + age + "," + salary);
+	x++;
+	int z = y-x;
+      	System.out.println("You have " + z + " insertions left");
+      	}
+     }
+      	
+}
