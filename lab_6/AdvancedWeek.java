@@ -1,4 +1,6 @@
- public class AdvancedWeek {
+package entrypoint; 
+
+public class AdvancedWeek {
     private String d1 = "Monday";
     private String d2 = "Tuesday";
     private String d3 = "Wednesday";
@@ -6,7 +8,7 @@
     private String d5 = "Friday";
     private String d6 = "Saturday";
     private String d7 = "Sunday"; 
-    
+  
     private int i = 1;
     
      

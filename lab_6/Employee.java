@@ -1,25 +1,34 @@
+package entrypoint;
+
 import java.util.Scanner;
 
 public class Employee {
-    // Initializing variables
     private String firstName;
     private String lastName;
     private int age;
     private double salary;
 
-    public Employee() {
-        
-        // Get user input
+   public Employee()
+   {
         
         Scanner scan = new Scanner(System.in);
         
-        /**
-         * Continue code here to ask for the first name, last name, age, and salary, IN THAT ORDER
-         */
-
-    }
+        System.out.print("Please input the employee's first name: ");
+		firstName = scan.nextLine();
+     
+	System.out.print("Please input the employee's last name: ");
+		lastName = scan.nextLine();
+     
+	System.out.print("Please input the employee's age: ");
+		age = scan.nextInt();
+     
+	System.out.print("Please input the employee's salary: ");
+		salary = scan.nextDouble();
+}
 
     public String toString() {
-        // insert logic for toString method
-    }
+     String s = "Employee Information: " + firstName + " " + lastName + ", " + age + ", " + salary;
+       return s;
+        }
 }
+
